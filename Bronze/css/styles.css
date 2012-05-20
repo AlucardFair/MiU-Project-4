@@ -1,0 +1,196 @@
+/*
+Zachery Hernandez
+VFW 1205
+Project 4
+5/24/2012
+Body Health & Fitness
+https://github.com/AlucardFair/MiU-Project-4
+*/
+
+.mainColor {
+	background-image: -webkit-linear-gradient(bottom, rgb(0,128,136), rgb(0,148,156), rgb(0,168,176));
+}
+
+.secondaryColor {
+	background-image: -webkit-linear-gradient(bottom, rgb(147,84,22), rgb(199,136,74), rgb(250,187,25));
+}
+
+.imgSize {
+	width: 100%;
+}
+
+#home .ui-grid-a, .ui-grid-b {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.indent {
+	text-indent: 40px;
+}
+
+#aboutImg {
+	margin-bottom: 25px;
+}
+
+/*
+body {
+	font-family: Helvetica, Roboto, Droid-Sans;
+	background-color: rgb(200,200,200);
+	margin: 0 auto;
+}
+
+body {
+	font-family: Helvetica, Roboto, Droid-Sans;
+	background-color: rgb(200,200,200);
+	width: 95%;
+	margin: 0 auto;
+	margin-bottom: 8px;
+	padding: .5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 0 10px #000;
+}
+
+#home {
+	margin: 0 auto;
+}
+
+#search {
+	text-align: right;
+	padding: 4px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	margin: 4px;
+}
+
+#feature {
+	display: block;
+	padding-bottom: 8px;
+	margin: 0 auto;
+	width: 95%;
+}
+
+#browse {
+	text-align: center;
+	padding: 4px;
+	margin: 0 auto;
+	margin-bottom: 4px;
+	width 80%;
+}
+
+#agility, #cardio, #flexibility, #strength, #tone {
+	color: white;
+	display: block;
+	padding: 4px;
+	margin: 0 auto;
+	margin-bottom: 4px;
+	width: 80%;
+	border-radius: 5px;
+	background-image: -webkit-linear-gradient(bottom, rgb(0,128,136), rgb(0,148,156), rgb(0,168,176));
+}
+
+#searchButton, #showData, #clearData, #startNew, #editButton, #deleteButton, #saveData {
+	font-size: 12px;
+	color: white;
+	background-image: -webkit-linear-gradient(bottom, rgb(147,84,22), rgb(199,136,74), rgb(250,187,25));
+	padding: 0px 7px 0px 7px;
+	margin-right: 10px;
+	border-style: solid;
+	border-width: .1px;
+	border-radius: 10px;
+	border-color: rgb(147,84,22);
+	-webkit-box-shadow: 0px 4px 4px -3px #000;
+}
+
+nav {
+	text-align: center;
+}
+
+h1 {
+	font-family: Helvetica, Roboto, Droid-Sans;
+	font-variant: small-caps;
+	font-weight: strong;
+	font-size: 170%;
+	text-align: center;
+	color: white;
+	margin: 0 auto;
+	padding: 2px;
+	border: 1px;
+	border-color: black;
+	width: 99%;
+	background-image: -webkit-linear-gradient(bottom, rgb(0,128,136), rgb(0,148,156), rgb(0,168,176));
+	-webkit-box-shadow: 0 0 5px black;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	font-family: Helvetica, Roboto, Droid-Sans;
+	color: rgb(60,60,60);
+	text-indent: 10px;
+	text-align: right;
+	font-size: 80%;
+	text-transform: lowercase;
+	margin-right: 12px;
+	margin-top: -10px;
+}
+
+fieldset {
+	font-family: Helvetica, Roboto, Droid-Sans;
+	font-size: 150%;
+	font-weight: strong;
+	color: white;
+	background-color: rgba(0,148,156,.3);
+	margin: 4px;
+	padding: 1px;
+	border-color: black;
+	border: 1px;
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 15px rgb(190,190,190);
+}
+
+#items {
+	background-color: rgba(0,148,156,.3);
+	margin: 4px;
+	padding: 1px;
+	border-color: black;
+	border: 1px;
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 15px rgb(190,190,190);
+}
+
+legend {
+	font-family: Helvetica, Roboto, Droid-Sans;
+	font-weight: strong;
+}
+
+span {
+	color: red;
+}
+
+span.required, #errors li {
+	color: white;
+	text-shadow: 0 0 5px red;
+}
+
+li {
+	font-family: Helvetica, Roboto, Droid-Sans;
+	font-size: 50%;
+	font-weight: normal;
+	color: white;
+	list-style-type: none;
+	list-style-position: inside;
+}
+
+div.button {
+	text-align: center;
+}
+
+footer {
+	font-family: Helvetica, Roboto, Droid-Sans;
+	font-variant: small-caps;
+	text-align: center;
+	color: rgb(88,88,88);
+}
+*/

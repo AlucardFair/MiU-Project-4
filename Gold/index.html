@@ -1,0 +1,677 @@
+<!doctype html> 
+<!-- Zachery Hernandez -->
+<!-- VFW 1205 -->
+<!-- Project 4 -->
+<!-- 5/24/2012 -->
+<!-- Body Health & Fitness -->
+<!-- https://github.com/AlucardFair/MiU-Project-4 -->
+<!-- Start of HTML Doc --> 
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>Body Health & Fitness</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css"/>
+	<link rel="stylesheet" href="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.css">
+	<link rel="stylesheet" href="css/styles.css"/>
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+	
+	<!-- Start of Home Page -->
+	<div data-role="page" id="home">
+	
+		<!-- Header -->
+		<div data-role="header" data-position="fixed" class="mainColor">
+			<!-- <img src="images/BHF_Logo.png" alt="Body Health & Fitness"/> Will be adding in a streamlined logo-->
+			<h1>Body Health & Fitness</h1>
+		</div>
+		
+		<!-- Home Content -->
+		<div data-role="content">
+
+			<div>
+				<center>
+					<p>...helping you schedule your worouts</p>
+				</center>
+			</div>
+		
+			<!-- Call to Action -->
+			<div>
+				<a href="#additem">
+					<img class="imgSize" src="images/BHF_Feature.png"/>
+				</a>
+			</div>
+
+			<!-- News Stream -->
+			<div>
+				<a href="#news"data-role="button" class="secondaryColor" >Fitness News</a>
+			</div>
+			
+			<!-- Browse -->
+			<div data-role="collapsible-set">
+			<!-- Browse by Apparel -->
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Browse by Apparel</h3>
+					<ul data-role="listview">
+					
+						<li>
+							<a href="#underConstruction">
+								<!-- <img src="images/.png"/> -->
+								<h4>Bottoms</h4>
+								<p>Browse Bottoms (Shorts/Pants)</p>
+							</a>
+						</li>
+						
+						<li>
+							<a href="#underConstruction">
+								<!-- <img src="images/.png"/> -->
+								<h4>Brand</h4>
+								<p>Browse Brand Names</p>
+							</a>
+						</li>
+						
+						<li>
+							<a href="#underConstruction">
+								<!-- <img src="images/.png"/> -->
+								<h4>Tops</h4>
+								<p>Browse Tops (Short Sleeve/ Long Sleeve Shirts)</p>
+							</a>
+						</li>
+						
+						<li>
+							<a href="#underConstruction">
+								<!-- <img src="images/.png"/> -->
+								<h4>Shoes</h4>
+								<p>Browse Shoes (Cross Train, Run, etc...)</p>
+							</a>
+						</li>
+					
+					</ul>
+				</div>
+			
+				<!-- Browse by Equipment -->			
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Browse by Equipment</h3>
+					<ul data-role="listview">
+					
+						<li>
+							<a href="#underConstruction">
+								<!-- <img src="images/.png"/> -->
+								<h4>Machines</h4>
+								<p>Cardio & Srength</p>
+							</a>
+						</li>
+
+						<li>
+							<a href="#underConstruction">
+								<!-- <img src="images/.png"/> -->
+								<h4>Resistance</h4>
+								<p>Agility & Tone</p>
+							</a>
+						</li>
+
+						<li>
+							<a href="#underConstruction">
+								<!-- <img src="images/.png"/> -->
+								<h4>Weights</h4>
+								<p>Strength</p>
+							</a>
+						</li>
+
+						<li>
+							<a href="#underConstruction">
+								<!-- <img src="images/.png"/> -->
+								<h4>Yoga</h4>
+								<p>Flexility</p>
+							</a>
+						</li>
+					
+					</ul>
+				</div>
+			
+				<!-- Browse by Workout -->
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Browse by Workout</h3>
+					<ul data-role="listview">
+					
+						<li>
+							<a href="#underConstruction">
+								<img src="images/Agility.png"/>
+								<h4>Agility</h4>
+								<p>Get faster at what you're doing</p>
+							</a>
+						</li>
+					
+						<li>
+							<a href="#underConstruction">
+								<img src="images/Cardio.png"/>
+								<h4>Cardio</h4>
+								<p>Do what you're doing for longer</p>
+							</a>
+						</li>
+					
+						<li>
+							<a href="#underConstruction">
+								<img src="images/Flexibility.png"/>
+								<h4>Flexibility</h4>
+								<p>Get your muscles to work with you</p>
+							</a>
+						</li>
+					
+						<li>
+							<a href="#underConstruction">
+								<img src="images/Strength.png"/>
+								<h4>Strength</h4>
+								<p>Get stronger for what you're doing</p>
+							</a>
+						</li>
+					
+						<li>
+							<a href="#underConstruction">
+								<img src="images/Tone.png"/>
+								<h4>Tone</h4>
+								<p>Get those looks you really want</p>
+							</a>
+						</li>
+					
+					</ul>
+				</div>
+				
+			</div>
+			
+		</div>
+		
+		<!-- Footer -->
+		<div data-role="footer" data-position="fixed">
+			<!-- Navbar -->
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-iconpos="left" class="secondaryColor">Home</a></li>
+					<li><a href="#about" data-icon="info" data-iconpos="left" class="mainColor">About</a></li>
+					<li><a href="#otherApp"data-icon="check" data-iconpos="left" class="mainColor">Other App</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+
+	<!-- Start Add Item Page -->
+	<div data-role="page" id="additem">
+
+		<!-- Header -->
+		<div data-role="header" data-position="fixed" id="addHeader" class="mainColor">
+			<a href="#" id="addBack" data-icon="arrow-l" data-rel="back" data-direction="reverse" class="secondaryColor">Back</a>
+			<!-- <img src="images/BHF_Logo.png" alt="Body Health & Fitness"/> Will be adding in a streamlined logo-->
+			<h1>Start a New Workout</h1>
+		</div>
+
+		<div data-role="content">
+
+			<!-- Display Link -->
+			<div id="nav">
+				<a href="#" id="showData" >Display Data</a>
+				<a href="#" id="clearData" >Clear Stored Data</a>
+				<!-- Start New Workout *hidden* -->
+				<a href="#additem" id="startNew" class="" style="display:none;">Start New Workout!</a>
+			</div>
+
+			<!-- Form Started -->
+			<form action="" method="post" id="workoutForm" data-ajax="false">
+
+				<div id="requiredIndicator">
+					<p>* Indicates Required Field</p>
+				</div>
+
+				<!-- Workout Style / Select -->
+				<div data-role="fieldcontain">
+					<label for="training">Training Style: *</label><br />
+					<select name="training" id="training" data-native-menu="false" class="required">
+						<option data-placeholder="true">*Choose A Style*</option>
+						<option value="Agility">Agility</option>
+						<option value="Cardio">Cardio</option>
+						<option value="Flexibility">Flexibility</option>
+						<option value="Strength">Strength</option>
+						<option value="Tone">Tone</option>
+					</select>
+				</div>
+
+				<!-- Workout Name / Text Field -->
+				<div data-role="fieldcontain">
+					<label for="wname">Workout Name: *</label><br /><input type="text" id="wname" name="wname" class="required" placeholder="Running, Weights..." />
+				</div>
+
+				<!-- Favorite / Checkbox -->
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+						<legend>Is this a favorite?</legend>
+						<input type="checkbox" value="Is this a favorite?" id="favorite" /><label for="favorite">Yes</label>
+					</fieldset>
+				</div>
+
+				<!-- How Long / Range -->
+				<div data-role="fieldcontain">
+					<label for="howlong">How long will this workout last? (5-60 Minutes)</label><br /><input type="range" id="howlong" name="howlong" value="20" min="5" max="60" step="5" />
+				</div>
+
+				<!-- Time of Day / Radio -->
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+						<legend>Prefered Time of Workout</legend>
+						<input type="radio" value="Morning" id="morning" name="timeofday" class="required" checked />
+						<label for="morning">Morning</label>
+						<input type="radio" value="Afternoon" id="afternoon" name="timeofday" />
+						<label for="afternoon">Afternoon</label>
+						<input type="radio" value="Evening" id="evening" name="timeofday" />
+						<label for="evening">Evening</label>
+					</fieldset>
+				</div>
+
+				<!-- Completion Date -->
+				<label for="completiondate">Date to be completed *</label><br /><input type="date" placeholder="YYYY-MM-DD" id="completiondate" name="completiondate" data-role="datebox" data-options='{"mode": "calbox", "calTodayButton": true}' data-transition="slideup" class="required" />
+
+				<!-- Motivation / Comments -->
+				<div data-role="fieldcontain">
+					<label for="comments">Start getting yourself motivated.</label><br /><textarea id="comments" name="comments" class="required" placeholder="Motivation starts here."></textarea>
+				</div>
+
+
+				<!-- Submit(Save) and Reset -->
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+						<input type="submit" name="save" id="saveData" value="Save!" data-icon="check" data-iconpos="left" data-theme="b" />
+					</div>
+					<div class="ui-block-b">
+						<input type="reset" name="reset" id="reset" value="Reset" />
+					</div>
+				</div>
+
+			</form>
+
+		</div>
+
+		<!-- Footer -->
+		<div data-role="footer" data-position="fixed">
+			<!-- Navbar -->
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-iconpos="left" class="mainColor">Home</a></li>
+					<li><a href="#about" data-icon="info" data-iconpos="left" class="mainColor">About</a></li>
+					<li><a href="#otherApp"data-icon="check" data-iconpos="left" class="mainColor">Other App</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+	
+	<!-- Start of About Page -->
+	<div data-role="page" id="about" data-add-back-btn="true">
+	
+		<!-- Header -->
+		<div data-role="header" data-position="fixed" class="mainColor">
+			<a href="#" id="addBack" data-icon="arrow-l" data-rel="back" data-direction="reverse" class="secondaryColor">Back</a>
+			<!-- <img src="images/BHF_Logo.png" alt="Body Health & Fitness"/> Will be adding in a streamlined logo-->
+			<h1>About the App</h1>
+		</div>
+		
+		<!--  About Content -->
+		<div data-role="content">
+
+			<div>
+				<img src="images/BHF_About.png" class="imgSize" />
+			</div>
+
+			<div data-role="collapsible" data-collapsed="true">
+					<h3>Information</h3>
+					<ul data-role="listview">
+					
+						<li>
+							<a href="#aboutApp">
+								<img src="images/About_Icon.png"/>
+								<h4>About the App</h4>
+								<p>This will tell you about the app</p>
+							</a>
+						</li>
+					
+						<li>
+							<a href="#underConstruction">
+								<img src="images/.png"/>
+								<h4>About the Coder</h4>
+								<p>This will tell you about the coder</p>
+							</a>
+						</li>
+
+						<li>
+							<a href="#jqmdb">
+								<img src="images/.png"/>
+								<h4>About DateBox</h4>
+								<p>Attribution for DateBox</p>
+							</a>
+						</li>
+					
+					</ul>
+				</div>
+
+		</div>
+
+		<!-- Footer -->
+		<div data-role="footer" data-position="fixed">
+			<!-- Navbar -->
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-iconpos="left" class="mainColor">Home</a></li>
+					<li><a href="#about" data-icon="info" data-iconpos="left" class="secondaryColor">About</a></li>
+					<li><a href="#otherApp"data-icon="check" data-iconpos="left" class="mainColor">Other App</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+
+	<!-- Start of About App Page -->
+	<div data-role="page" id="aboutApp">
+	
+		<!-- Header -->
+		<div data-role="header" data-position="fixed" class="mainColor">
+			<a href="#" id="addBack" data-icon="arrow-l" data-rel="back" data-direction="reverse" class="secondaryColor">Back</a>
+			<!-- <img src="images/BHF_Logo.png" alt="Body Health & Fitness"/> Will be adding in a streamlined logo-->
+			<h1>About the App</h1>
+		</div>
+		
+		<!--  About Content -->
+		<div data-role="content">
+
+			<div>
+				<img src="images/BHF_About.png" class="imgSize" />
+			</div>
+
+			<div>
+				<h4>About this app</h4>
+				<p class="indent">With this app, we help you towards your goals. Whether it's to get in shape, lose weight or maintain weight; We want you to help you get fit. By organizing your workouts, you will be able to stay up-to-date with your own goals and motivation.</p>
+				<p class="indent">We also feature news brought to you by the wonderful staff who keep us up-to-date with all the fitness news you could ever ask for. Below is a list of pros and cons for this app and weahter its right for you:</p>
+			</div>
+
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">Pros</li>
+						<li>Storage on device is kept open.</li>
+						<li>No need to actually install this app.</li>
+						<li>All in one to-do workout list.</li>
+					</ul>
+				</div>
+				<div class="ui-block-b">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">Cons</li>
+						<li>It's not locally installed.</li>
+						<li>No internet, no working about.</li>
+						<li>Saves are on browser, not on server or laocally.</li>
+						<li>Can only access saved workouts from particular device.</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Footer -->
+		<div data-role="footer" data-position="fixed">
+			<!-- Navbar -->
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-iconpos="left" class="mainColor">Home</a></li>
+					<li><a href="#about" data-icon="info" data-iconpos="left" class="secondaryColor">About</a></li>
+					<li><a href="#otherApp"data-icon="check" data-iconpos="left" class="mainColor">Other App</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+
+	<!-- Start of DateBox Plugin Page -->
+	<div data-role="page" id="jqmdb">
+	
+		<!-- Header -->
+		<div data-role="header" data-position="fixed" class="mainColor">
+			<a href="#" id="addBack" data-icon="arrow-l" data-rel="back" data-direction="reverse" class="secondaryColor">Back</a>
+			<!-- <img src="images/BHF_Logo.png" alt="Body Health & Fitness"/> Will be adding in a streamlined logo-->
+			<h1>About the DateBox Plugin</h1>
+		</div>
+		
+		<!--  DateBox Content -->
+		<div data-role="content">
+
+			<div>
+				<img src="images/jquery_logo_db.png" class="imgSize" />
+				<p><center><small>A Date and Time Picker plugin for jQueryMobile</small></center></p>
+				<p><center><small>1.0.1</small></center></p>
+			</div>
+
+			<div>
+				<h4>About the DateBox Plugin</h4>
+				<p class="indent">This plug in solves an issue inside of the iOS simulator. By using it, it was able to assist me in correcting the date format that jQM uses to validate the input date.</p>
+				<p class="indent">Also, with this plug in, you get nice and nifty calendar dialog. Which is also a plus.</p>
+				<p class="indent">Now, this plugin belongs to it's rightful owner. Should you like to read about this plugin, follow the links below:</p>
+			</div>
+
+			<div>
+				<ul data-role="listview" data-inset="true">
+					<li><a href="http://dev.jtsage.com/jQM-DateBox/">JT Sage - jQM DateBox</a></li>
+					<li><a href="https://github.com/jtsage/jquery-mobile-datebox/blob/master/README.md">jQM DateBox Features</a></li>
+					<li><a href="https://github.com/jtsage/jquery-mobile-datebox/blob/master/LICENSE">jQM DateBox License</a></li>
+				</ul>
+			</div>
+
+		</div>
+
+		<!-- Footer -->
+		<div data-role="footer" data-position="fixed">
+			<!-- Navbar -->
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-iconpos="left" class="mainColor">Home</a></li>
+					<li><a href="#about" data-icon="info" data-iconpos="left" class="secondaryColor">About</a></li>
+					<li><a href="#otherApp"data-icon="check" data-iconpos="left" class="mainColor">Other App</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+	
+	<!-- Start of otherApp Page -->
+	<div data-role="page" id="otherApp" data-add-back-btn="true">
+	
+		<!-- Header -->
+		<div data-role="header" data-position="fixed" class="mainColor">
+			<a href="#" id="addBack" data-icon="arrow-l" data-rel="back" data-direction="reverse" class="secondaryColor">Back</a>
+			<!-- <img src="images/BHF_Logo.png" alt="Body Health & Fitness"/> Will be adding in a streamlined logo-->
+			<h1>About the Other App</h1>
+		</div>
+		
+		<!--  Other App Content -->
+		<div data-role="content">
+
+			<ul data-role="listview">
+				<li>
+					<img src="images/Gold_Star.png"/>
+					<h4>Gold App</h4>
+					<p>Currently, you are on the Gold App.<br />To see the Bronze App, click the<br />button below.</p>
+				</li>
+			</ul>
+
+			<a href="http://alucardfair.github.com/MiU-Project-3/Bronze/index.html" data-role="button" data-theme="b">Checkout Bronze App</a>
+
+		</div>
+		
+		<!-- Footer -->
+		<div data-role="footer" data-position="fixed">
+			<!-- Navbar -->
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-iconpos="left" class="mainColor">Home</a></li>
+					<li><a href="#about" data-icon="info" data-iconpos="left" class="mainColor">About</a></li>
+					<li><a href="#otherApp"data-icon="check" data-iconpos="left" class="secondaryColor">Other App</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+
+	<!-- Start of News Page -->
+	<div data-role="page" id="news" data-add-back-btn="true">
+	
+		<!-- Header -->
+		<div data-role="header" data-position="fixed" class="mainColor">
+			<a href="#" id="addBack" data-icon="arrow-l" data-rel="back" data-direction="reverse" class="secondaryColor">Back</a>
+			<!-- <img src="images/BHF_Logo.png" alt="Body Health & Fitness"/> Will be adding in a streamlined logo-->
+			<h1>Fitness News</h1>
+		</div>
+		
+		<!--  News Page Content -->
+		<div data-role="content">
+
+			<ul data-role="listview" data-filter="true">
+
+				<li>
+					<a href="#underConstruction">
+						<img src="images/Agility.png"/>
+						<h4>How can you get faster?</h4>
+						<span><small>by John Smith</small></span>
+						<p>5/10/2012 5:15pm<br />Tags: Agility, Speed, Finess</p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#underConstruction">
+						<img src="images/Strength.png"/>
+						<h4>How can you get stronger?</h4>
+						<span><small>by Johnny Noeface</span></small>
+						<p>5/10/2012 3:46pm<br />Tags: Strength</p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#underConstruction">
+						<img src="images/Tone.png"/>
+						<h4>Looking to get those abs defined?</h4>
+						<span><small>by Jane Smith</small></span>
+						<p>5/10/2012 2:34pm<br />Tags: Tone, Abs</p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#underConstruction">
+						<img src="images/Flexibility.png"/>
+						<h4>Yoga: Why you need it.</h4>
+						<span><small>by Jane Smith</small></span>
+						<p>5/10/2012 11:15am<br />Tags: Flexibility, Yoga</p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#underConstruction">
+						<img src="images/Cardio.png"/>
+						<h4>How you can improve your heart rate.</h4>
+						<span><small>by John Smith</small></span>
+						<p>5/10/2012 5:05am<br />Tags: Cardio, Heart Rate</p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#underConstruction">
+						<img src="images/Tone.png"/>
+						<h4>Push-ups: 'Why' they can make a difference.</h4>
+						<span><small>by Johnny Noeface</small></span>
+						<p>5/9/2012 8:51pm<br />Tags: Tone, Push-ups</p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#underConstruction">
+						<img src="images/Strength.png"/>
+						<h4>Weight Lifting: Free or Machines?</h4>
+						<span><small>by Jane Smith</small></span>
+						<p>5/9/2012 6:32pm<br />Tags: Strength, Weight Lifting</p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#underConstruction">
+						<img src="images/Flexibility.png"/>
+						<h4>Are you limber?</h4>
+						<span><small>by Jane Smith</small></span>
+						<p>5/9/2012 2:16pm<br />Tags: Flexibility, Limber</p>
+					</a>
+				</li>
+
+			</ul>
+
+		</div>
+		
+		<!-- Footer -->
+		<div data-role="footer" data-position="fixed">
+			<!-- Navbar -->
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-iconpos="left" class="mainColor">Home</a></li>
+					<li><a href="#about" data-icon="info" data-iconpos="left" class="mainColor">About</a></li>
+					<li><a href="#otherApp"data-icon="check" data-iconpos="left" class="mainColor">Other App</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+
+		<!-- Start of Construction Page -->
+	<div data-role="page" id="underConstruction" data-add-back-btn="true">
+		
+		<!-- Header -->
+		<div data-role="header" data-position="fixed" class="mainColor">
+			<a href="#" id="addBack" data-icon="arrow-l" data-rel="back" data-direction="reverse" class="secondaryColor">Back</a>
+			<!-- <img src="images/BHF_Logo.png" alt="Body Health & Fitness"/> Will be adding in a streamlined logo-->
+			<h1>Under Construction</h1>
+		</div>
+
+		<!--  Construction Content -->
+		<div data-role="content">
+
+			<img src="images/Construction.png" class="imgSize"/>
+
+		</div>
+		
+		<!-- Footer -->
+		<div data-role="footer" data-position="fixed">
+			<!-- Navbar -->
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-iconpos="left" class="mainColor">Home</a></li>
+					<li><a href="#about" data-icon="info" data-iconpos="left" class="mainColor">About</a></li>
+					<li><a href="#otherApp"data-icon="check" data-iconpos="left" class="mainColor">Other App</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+
+	<!-- JavaScript under here -->
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	<script src="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/json.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

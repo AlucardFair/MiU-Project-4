@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!-- Zachery Hernandez -->
+<!-- VFW 1205 -->
+<!-- Project 4 -->
+<!-- 5/24/2012 -->
+<!-- Body Health & Fitness -->
+<!-- https://github.com/AlucardFair/MiU-Project-4 -->
+<!-- Start of HTML Doc -->
+<html>
+	<head>
+		<!-- Title -->
+		<title>Body Health & Fitness</title>
+		<!-- Meta Details -->
+		<meta charset="utf-8" />
+		<meta keyword="body, health, fitness" />
+		<meta description="Get into shape or stay in shape." />
+		<meta name="robots" content="index, follow" />
+		<meta name="viewport" content="user-scalable=no, width=device-width" />
+		<meta name="viewport" content="user-scalable=no, target-densitydpi=device-dpi" />
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/styles.css" type="text/css" />
+	</head>
+	<body>
+		<header>
+			<!-- New Workout Title -->
+			<a href="index.html" rel="external" id="failSafe"><h1>Start a new workout!</h1></a>
+			<!-- App Description -->
+			<p><medium><strong>...Helping you schedule your workouts</strong></medium></p>
+			<nav>
+				<!-- Display Link -->
+				<a href="#" id="showData">Display Data</a>
+				<a href="#" id="clearData">Clear Stored Data</a>
+				<!-- Start New Workout *hidden* -->
+				<a href="additem.html" id="startNew" style="display:none;">Start New Workout!</a>
+			</nav>
+		</header>
+		<!-- Form Started -->
+		<form id="workoutForm" action="#" method="post">
+			<!-- Start Fieldset & Legend -->
+			<fieldset>
+				<legend>Training</legend>
+				<ul>
+					<li>
+						<ul id="errors"></ul>
+						<!-- Start Select & Option -->
+						<!-- New Dynamic Code -->
+						<li id="select"><label for="training">Training Style: </label><br /></li>
+						<!-- Old Code -->
+					<!--<label for="method">Training Style:</label><br>
+						<select id="method">
+						<optgroup label="Choose A Style">
+							<option value="Cardio">Cardio</option>
+							<option value="Strength">Strength</option>
+							<option value="Tone">Tone</option>
+						</optgroup>
+						</select> -->
+						<!-- End Select & Option -->
+					</li>
+					<!-- Text Field -->
+					<li><label for="wname">Workout Name: </label><br /><input type="text" id="wname" /></li>
+					<!-- Checkbox -->
+					<li><label for="favorite">Is this a favorite? </label><input type="checkbox" value="Is this a favorite?" id="favorite" checked/></li>
+					<!-- Range -->
+					<li><label for="howlong">How long will you do this workout? (5-60 Minutes)</label><br /><input type="range" id="howlong" value="0" min="5" max="60" step="5" /></li>
+					<li>What time would you prefer for this workout?</li>
+					<!-- Radio -->
+					<li><input type="radio" value="Morning" id="morning" name="timeofday" /><label for="morning">Morning</label></li>
+					<li><input type="radio" value="Afternoon" id="afternoon" name="timeofday" /><label for="afternoon">Afternoon</label></li>
+					<li><input type="radio" value="Evening" id="evening" name="timeofday" checked/><label for="evening">Evening</label></li>
+					<li><label for="completiondate"><span>* </span>Date to be completed</label><br /><input type="date" value="completiondate" id="completiondate" name="completiondate" /></li>
+				</ul>
+				<!-- End Fieldset -->
+				</fieldset>
+				<!-- Start Fieldset & Legend -->
+				<fieldset>
+					<legend>Motivation</legend>
+					<ul>
+						<!-- Text Area -->
+						<li><label for="comments">Start getting yourself motivated.</label><br /><textarea id="comments"></textarea></li>
+					</ul>
+			<!-- End Fieldset -->
+			</fieldset>
+			<div class="button">
+				<!-- Submit / Add Workout or Clear Data -->
+				<input type="reset" name="reset" value="Reset" />
+				<input type="submit" name="save" id="saveData" value="Add Workout!" />
+			</div>
+		<!-- Form Ended -->
+		</form>
+	<!-- Small Details that are not important enough to be in the main section -->	
+	<footer id="foot">
+		<small>Coded by Zachery Hernandez</small>
+	</footer>
+		<!-- JavaScript -->
+		<script type="text/javascript" src="js/json.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
+<!-- End of HTML Doc -->

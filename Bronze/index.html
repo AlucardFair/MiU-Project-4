@@ -1,0 +1,400 @@
+<!doctype html> 
+<!-- Zachery Hernandez -->
+<!-- VFW 1205 -->
+<!-- Project 4 -->
+<!-- 5/24/2012 -->
+<!-- Body Health & Fitness -->
+<!-- https://github.com/AlucardFair/MiU-Project-4 -->
+<!-- Start of HTML Doc --> 
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>Body Health & Fitness</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css"/>
+	<link rel="stylesheet" href="css/styles.css"/>
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+	
+	<!-- Start of Home Page -->
+	<div data-role="page" id="home">
+	
+		<!-- Header -->
+		<div data-role="header" data-position="fixed" class="mainColor">
+			<h1>Body Health & Fitness</h1>
+		</div>
+		
+		<!-- Home Content -->
+		<div data-role="content">
+		
+			<!-- Call to Action -->
+			<div>
+				<a href="additem.html" rel="external">
+					<img class="imgSize" src="images/BHF_Feature.png"/>
+				</a>
+			</div>
+			
+			<!-- Browse -->
+			<div class="ui-grid-b">
+
+				<div class="ui-block-a" >
+					<a href="#underConstruction">
+						<img src="images/Agility.png"/>
+					</a>
+					<p>Agility</p>
+				</div>
+				<div class="ui-block-b" >
+					<a href="#underConstruction">
+						<img src="images/Cardio.png"/>
+					</a>
+					<p>Cardio</p>
+				</div>
+				<div class="ui-block-c" >
+					<a href="#underConstruction">
+						<img src="images/Flexibility.png"/>
+					</a>
+					<p>Flexibility</p>
+				</div>
+
+			</div>
+
+			<div class="ui-grid-a">
+
+				<div class="ui-block-a" >
+					<a href="#underConstruction">
+						<img src="images/Strength.png"/>
+					</a>
+					<p>Strength</p>
+				</div>
+				<div class="ui-block-b" >
+					<a href="#underConstruction">
+						<img src="images/Tone.png"/>
+					</a>
+					<p>Tone</p>
+				</div>
+
+			</div>
+
+			<!-- News Stream -->
+			<div>
+				<a href="#news"data-role="button" class="secondaryColor" >Fitness News</a>
+			</div>
+			
+		</div>
+		
+		<!-- Footer -->
+		<div data-role="footer" data-position="fixed">
+			<!-- Navbar -->
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-iconpos="left" class="secondaryColor">Home</a></li>
+					<li><a href="#about" data-icon="info" data-iconpos="left" class="mainColor">About</a></li>
+					<li><a href="#otherApp"data-icon="check" data-iconpos="left" class="mainColor">Other App</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+	
+	<!-- Start of About Page -->
+	<div data-role="page" id="about" data-add-back-btn="true">
+	
+		<!-- Header -->
+		<div data-role="header" data-position="fixed" class="mainColor">
+			<h1>About</h1>
+		</div>
+		
+		<!--  About Content -->
+		<div data-role="content">
+
+			<div>
+				<img src="images/BHF_About.png" class="imgSize" id="aboutImg" />
+			</div>
+
+			<div>
+				<ul data-role="listview">
+					
+					<li>
+						<a href="#aboutApp">
+							<img src="images/About_Icon.png"/>
+							<h4>About the App</h4>
+							<p>This will tell you about the app</p>
+						</a>
+					</li>
+					
+					<li>
+						<a href="#underConstruction">
+							<img src="images/.png"/>
+							<h4>About the Coder</h4>
+							<p>This will tell you about the coder</p>
+						</a>
+					</li>
+					
+				</ul>
+			</div>
+
+		</div>
+
+		<!-- Footer -->
+		<div data-role="footer" data-position="fixed">
+			<!-- Navbar -->
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-iconpos="left" class="mainColor">Home</a></li>
+					<li><a href="#about" data-icon="info" data-iconpos="left" class="secondaryColor">About</a></li>
+					<li><a href="#otherApp"data-icon="check" data-iconpos="left" class="mainColor">Other App</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+
+	<!-- Start of About App Page -->
+	<div data-role="page" id="aboutApp" data-add-back-btn="true">
+	
+		<!-- Header -->
+		<div data-role="header" data-position="fixed" class="mainColor">
+			<h1>About the App</h1>
+		</div>
+		
+		<!--  About Content -->
+		<div data-role="content">
+
+			<div>
+				<img src="images/BHF_About.png" class="imgSize" />
+			</div>
+
+			<div>
+				<h4>About this app</h4>
+				<p class="indent">With this app, we help you towards your goals. Whether it's to get in shape, lose weight or maintain weight; We want you to help you get fit. By organizing your workouts, you will be able to stay up-to-date with your own goals and motivation.</p>
+				<p class="indent">We also feature news brought to you by the wonderful staff who keep us up-to-date with all the fitness news you could ever ask for. Below is a list of pros and cons for this app and weahter its right for you:</p>
+			</div>
+
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">Pros</li>
+						<li>Storage on device is kept open.</li>
+						<li>No need to actually install this app.</li>
+						<li>All in one to-do workout list.</li>
+					</ul>
+				</div>
+				<div class="ui-block-b">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">Cons</li>
+						<li>It's not locally installed.</li>
+						<li>No internet, no working about.</li>
+						<li>Saves are on browser, not on server or laocally.</li>
+						<li>Can only access saved workouts from particular device.</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Footer -->
+		<div data-role="footer" data-position="fixed">
+			<!-- Navbar -->
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-iconpos="left" class="mainColor">Home</a></li>
+					<li><a href="#about" data-icon="info" data-iconpos="left" class="secondaryColor">About</a></li>
+					<li><a href="#otherApp"data-icon="check" data-iconpos="left" class="mainColor">Other App</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+	
+	<!-- Start of otherApp Page -->
+	<div data-role="page" id="otherApp" data-add-back-btn="true">
+	
+		<!-- Header -->
+		<div data-role="header" data-position="fixed" class="mainColor">
+			<h1>About the Other App</h1>
+		</div>
+		
+		<!--  Other App Content -->
+		<div data-role="content">
+
+			<ul data-role="listview">
+				<li>
+					<img src="images/Bronze_Star.png"/>
+					<h4>Bronze App</h4>
+					<p>Currently, you are on the Bronze App.<br />To see the Gold App, click the button<br />below.</p>
+				</li>
+			</ul>
+
+			<a href="http://alucardfair.github.com/MiU-Project-3/Gold/index.html" data-role="button">Checkout Gold App</a>
+
+		</div>
+		
+		<!-- Footer -->
+		<div data-role="footer" data-position="fixed">
+			<!-- Navbar -->
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-iconpos="left" class="mainColor">Home</a></li>
+					<li><a href="#about" data-icon="info" data-iconpos="left" class="mainColor">About</a></li>
+					<li><a href="#otherApp"data-icon="check" data-iconpos="left" class="secondaryColor">Other App</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+
+	<!-- Start of News Page -->
+	<div data-role="page" id="news" data-add-back-btn="true">
+	
+		<!-- Header -->
+		<div data-role="header" data-position="fixed" class="mainColor">
+			<h1>Fitness News</h1>
+		</div>
+		
+		<!--  News Page Content -->
+		<div data-role="content">
+
+			<ul data-role="listview" data-filter="true">
+
+				<li>
+					<a href="#underConstruction">
+						<img src="images/Agility.png"/>
+						<h4>How can you get faster?</h4>
+						<span><small>by John Smith</small></span>
+						<p>5/10/2012 5:15pm<br />Tags: Agility, Speed, Finess</p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#underConstruction">
+						<img src="images/Strength.png"/>
+						<h4>How can you get stronger?</h4>
+						<span><small>by Johnny Noeface</span></small>
+						<p>5/10/2012 3:46pm<br />Tags: Strength</p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#underConstruction">
+						<img src="images/Tone.png"/>
+						<h4>Looking to get those abs defined?</h4>
+						<span><small>by Jane Smith</small></span>
+						<p>5/10/2012 2:34pm<br />Tags: Tone, Abs</p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#underConstruction">
+						<img src="images/Flexibility.png"/>
+						<h4>Yoga: Why you need it.</h4>
+						<span><small>by Jane Smith</small></span>
+						<p>5/10/2012 11:15am<br />Tags: Flexibility, Yoga</p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#underConstruction">
+						<img src="images/Cardio.png"/>
+						<h4>How you can improve your heart rate.</h4>
+						<span><small>by John Smith</small></span>
+						<p>5/10/2012 5:05am<br />Tags: Cardio, Heart Rate</p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#underConstruction">
+						<img src="images/Tone.png"/>
+						<h4>Push-ups: 'Why' they can make a difference.</h4>
+						<span><small>by Johnny Noeface</small></span>
+						<p>5/9/2012 8:51pm<br />Tags: Tone, Push-ups</p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#underConstruction">
+						<img src="images/Strength.png"/>
+						<h4>Weight Lifting: Free or Machines?</h4>
+						<span><small>by Jane Smith</small></span>
+						<p>5/9/2012 6:32pm<br />Tags: Strength, Weight Lifting</p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#underConstruction">
+						<img src="images/Flexibility.png"/>
+						<h4>Are you limber?</h4>
+						<span><small>by Jane Smith</small></span>
+						<p>5/9/2012 2:16pm<br />Tags: Flexibility, Limber</p>
+					</a>
+				</li>
+
+			</ul>
+
+		</div>
+		
+		<!-- Footer -->
+		<div data-role="footer" data-position="fixed">
+			<!-- Navbar -->
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-iconpos="left" class="mainColor">Home</a></li>
+					<li><a href="#about" data-icon="info" data-iconpos="left" class="mainColor">About</a></li>
+					<li><a href="#otherApp"data-icon="check" data-iconpos="left" class="mainColor">Other App</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+
+	<!-- Start of Construction Page -->
+	<div data-role="page" id="underConstruction" data-add-back-btn="true">
+		
+		<!-- Header -->
+		<div data-role="header" data-position="fixed" class="mainColor">
+			<h1>Under Construction</h1>
+		</div>
+
+		<!--  Construction Content -->
+		<div data-role="content">
+
+			<img src="images/Construction.png" class="imgSize"/>
+
+		</div>
+		
+		<!-- Footer -->
+		<div data-role="footer" data-position="fixed">
+			<!-- Navbar -->
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-iconpos="left" class="mainColor">Home</a></li>
+					<li><a href="#about" data-icon="info" data-iconpos="left" class="mainColor">About</a></li>
+					<li><a href="#otherApp"data-icon="check" data-iconpos="left" class="mainColor">Other App</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+
+	<!-- JavaScript under here -->
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/json.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
