@@ -27,9 +27,19 @@ https://github.com/AlucardFair/MiU-Project-4
 	background-image: -webkit-linear-gradient(bottom, rgb(0,168,176), rgb(0,188,196), rgb(0,208,216));
 }
 
+a {
+	text-decoration: none;
+	color: rgb(0,148,156);
+}
+
 .imgSize {
 	width: 100%;
 	border-radius: 5px;
+}
+
+.branding {
+	width: 50%;
+	margin-left: 1em;
 }
 
 #home .ui-grid-a, .ui-grid-b {
