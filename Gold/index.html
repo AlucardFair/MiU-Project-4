@@ -44,10 +44,8 @@
 		<!-- Home Content -->
 		<div data-role="content">
 
-			<div>
-				<center>
-					<p>...helping you schedule your worouts</p>
-				</center>
+			<div class="description">
+				<p>...helping you schedule your worouts</p>
 			</div>
 		
 			<!-- Call to Action -->
@@ -63,10 +61,10 @@
 			</div>
 			
 			<!-- Browse -->
-			<div data-role="collapsible-set">
+			<div data-role="collapsible-set" data-type="horizontal">
 			<!-- Browse by Apparel -->
 				<div data-role="collapsible" data-collapsed="true">
-					<h3>Browse by Apparel</h3>
+					<h3>Apparel</h3>
 					<ul data-role="listview">
 					
 						<li>
@@ -106,7 +104,7 @@
 			
 				<!-- Browse by Equipment -->			
 				<div data-role="collapsible" data-collapsed="true">
-					<h3>Browse by Equipment</h3>
+					<h3>Equipment</h3>
 					<ul data-role="listview">
 					
 						<li>
@@ -146,7 +144,7 @@
 			
 				<!-- Browse by Workout -->
 				<div data-role="collapsible" data-collapsed="true">
-					<h3>Browse by Workout</h3>
+					<h3>Workouts</h3>
 					<ul data-role="listview">
 					
 						<li>
@@ -201,7 +199,7 @@
 			<!-- Navbar -->
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#home" data-icon="home" data-iconpos="left" class="secondaryColor">Home</a></li>
+					<li><a href="#home" data-icon="home" data-iconpos="left" class="thirdColor">Home</a></li>
 					<li><a href="#about" data-icon="info" data-iconpos="left" class="mainColor">About</a></li>
 					<li><a href="#otherApp"data-icon="check" data-iconpos="left" class="mainColor">Other App</a></li>
 				</ul>
@@ -341,7 +339,7 @@
 					
 						<li>
 							<a href="#aboutApp">
-								<img src="images/About_Icon.png"/>
+								<img src="images/About_Icon.png" class="imgSize" />
 								<h4>About the App</h4>
 								<p>This will tell you about the app</p>
 							</a>
@@ -349,7 +347,7 @@
 					
 						<li>
 							<a href="#underConstruction">
-								<img src="images/.png"/>
+								<img src="images/.png" class="imgSize"/>
 								<h4>About the Coder</h4>
 								<p>This will tell you about the coder</p>
 							</a>
@@ -357,7 +355,7 @@
 
 						<li>
 							<a href="#jqmdb">
-								<img src="images/.png"/>
+								<img src="images/.png" class="imgSize"/>
 								<h4>About DateBox</h4>
 								<p>Attribution for DateBox</p>
 							</a>
@@ -374,7 +372,7 @@
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home" data-iconpos="left" class="mainColor">Home</a></li>
-					<li><a href="#about" data-icon="info" data-iconpos="left" class="secondaryColor">About</a></li>
+					<li><a href="#about" data-icon="info" data-iconpos="left" class="thirdColor">About</a></li>
 					<li><a href="#otherApp"data-icon="check" data-iconpos="left" class="mainColor">Other App</a></li>
 				</ul>
 			</div>
@@ -433,7 +431,7 @@
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home" data-iconpos="left" class="mainColor">Home</a></li>
-					<li><a href="#about" data-icon="info" data-iconpos="left" class="secondaryColor">About</a></li>
+					<li><a href="#about" data-icon="info" data-iconpos="left" class="thirdColor">About</a></li>
 					<li><a href="#otherApp"data-icon="check" data-iconpos="left" class="mainColor">Other App</a></li>
 				</ul>
 			</div>
@@ -483,7 +481,7 @@
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home" data-iconpos="left" class="mainColor">Home</a></li>
-					<li><a href="#about" data-icon="info" data-iconpos="left" class="secondaryColor">About</a></li>
+					<li><a href="#about" data-icon="info" data-iconpos="left" class="thirdColor">About</a></li>
 					<li><a href="#otherApp"data-icon="check" data-iconpos="left" class="mainColor">Other App</a></li>
 				</ul>
 			</div>
@@ -506,7 +504,7 @@
 
 			<ul data-role="listview">
 				<li>
-					<img src="images/Gold_Star.png"/>
+					<img src="images/Gold_Star.png" class="imgSize"/>
 					<h4>Gold App</h4>
 					<p>Currently, you are on the Gold App.<br />To see the Bronze App, click the<br />button below.</p>
 				</li>
@@ -523,7 +521,7 @@
 				<ul>
 					<li><a href="#home" data-icon="home" data-iconpos="left" class="mainColor">Home</a></li>
 					<li><a href="#about" data-icon="info" data-iconpos="left" class="mainColor">About</a></li>
-					<li><a href="#otherApp"data-icon="check" data-iconpos="left" class="secondaryColor">Other App</a></li>
+					<li><a href="#otherApp"data-icon="check" data-iconpos="left" class="thirdColor">Other App</a></li>
 				</ul>
 			</div>
 		</div>
@@ -531,7 +529,7 @@
 	</div>
 
 	<!-- Start of News Page -->
-	<div data-role="page" id="news" data-add-back-btn="true">
+	<div data-role="page" id="news">
 	
 		<!-- Header -->
 		<div data-role="header" data-position="fixed" class="mainColor">
@@ -636,7 +634,7 @@
 	</div>
 
 		<!-- Start of Construction Page -->
-	<div data-role="page" id="underConstruction" data-add-back-btn="true">
+	<div data-role="page" id="underConstruction">
 		
 		<!-- Header -->
 		<div data-role="header" data-position="fixed" class="mainColor">
