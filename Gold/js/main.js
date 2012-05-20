@@ -59,6 +59,8 @@ $(document).ready(function() {
 				ge('clearData').style.display = "none";
 				ge('startNew').style.display = "none";
 				ge('saveData').style.display = "none";
+				ge('addBack').style.display = "none";
+				ge('foot').style.display = "none";
 				break;
 			case "off":
 				ge('workoutForm').style.display = "block";
@@ -66,6 +68,8 @@ $(document).ready(function() {
 				ge('clearData').style.display = "inline";
 				ge('startNew').style.display = "none";
 				ge('saveData').style.display = "inline";
+				ge('addBack').style.display = "inline";
+				ge('foot').style.display = "block";
 				ge('items').style.display = "none";
 				break;
 			default:
