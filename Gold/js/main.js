@@ -99,7 +99,9 @@ $(document).ready(function() {
 			
 		// Save Data into Local Storage with JSON.stringify //
 		localStorage.setItem(id, JSON.stringify(item));
-		alert("Workout Saved!");
+		alert("Workout Saved!");//
+		// Set dialog using Dialog //
+		//$('#dialog').attr("title", "Saved!").text("Your workout has been saved.").dialog('open');
 	};
 	
 	// Write Data from Local Storage to Browser //
