@@ -44,10 +44,6 @@
 		
 		<!-- Home Content -->
 		<div data-role="content">
-
-			<div class="description">
-				<p>...helping you schedule your workouts</p>
-			</div>
 		
 			<!-- Call to Action -->
 			<div>
@@ -226,23 +222,24 @@
 
 			<!-- Display Link -->
 			<div id="nav">
-				<a href="#" id="showData" >Display Data</a>
-				<a href="#" id="clearData" >Clear Stored Data</a>
-				<!-- Start New Workout *hidden* -->
-				<a href="#additem" id="startNew" class="" style="display:none;">Start New Workout!</a>
+				<center>
+					<a href="#" id="showData">Display Data</a>
+					<a href="#" id="clearData">Clear Stored Data</a>
+					<!-- Start New Workout *hidden* -->
+					<a href="#additem" id="startNew" class="" style="display:none;">Start New Workout!</a>
+				</center>
 			</div>
 
 			<!-- Form Started -->
-			<form action="" method="post" id="workoutForm" data-ajax="false">
-
-				<div id="requiredIndicator">
-					<p>* Indicates Required Field</p>
-				</div>
+			<form action="" method="post" id="workoutForm">
 
 				<!-- Workout Style / Select -->
 				<div data-role="fieldcontain">
+					<div id="requiredIndicator">
+						<p class="showRequired">* Indicates Required Field</p>
+					</div>
 					<label for="training">Training Style: *</label><br />
-					<select name="training" id="training" data-native-menu="false" class="required">
+					<select name="training" id="training" data-native-menu="false" data-theme="b" class="required">
 						<option data-placeholder="true">*Choose A Style*</option>
 						<option value="Agility">Agility</option>
 						<option value="Cardio">Cardio</option>
@@ -254,51 +251,51 @@
 
 				<!-- Workout Name / Text Field -->
 				<div data-role="fieldcontain">
-					<label for="wname">Workout Name: *</label><br /><input type="text" id="wname" name="wname" class="required" placeholder="Running, Weights..." />
+					<label for="wname">Workout Name: *</label><br /><input type="text" id="wname" name="wname" data-theme="b" class="required" placeholder="Running, Weights..." />
 				</div>
 
 				<!-- Favorite / Checkbox -->
 				<div data-role="fieldcontain">
 					<fieldset data-role="controlgroup">
 						<legend>Is this a favorite?</legend>
-						<input type="checkbox" value="Is this a favorite?" id="favorite" /><label for="favorite">Yes</label>
+						<input type="checkbox" value="Is this a favorite?" id="favorite" data-theme="b" /><label for="favorite">Yes</label>
 					</fieldset>
 				</div>
 
 				<!-- How Long / Range -->
 				<div data-role="fieldcontain">
-					<label for="howlong">How long will this workout last? (5-60 Minutes)</label><br /><input type="range" id="howlong" name="howlong" value="20" min="5" max="60" step="5" />
+					<label for="howlong">How long will this workout last? (5-60 Minutes)</label><br /><input type="range" id="howlong" name="howlong" value="20" min="5" max="60" step="5" data-theme="b" />
 				</div>
 
 				<!-- Time of Day / Radio -->
 				<div data-role="fieldcontain">
 					<fieldset data-role="controlgroup">
 						<legend>Prefered Time of Workout</legend>
-						<input type="radio" value="Morning" id="morning" name="timeofday" class="required" checked />
+						<input type="radio" value="Morning" id="morning" name="timeofday" class="required" checked data-theme="d" />
 						<label for="morning">Morning</label>
-						<input type="radio" value="Afternoon" id="afternoon" name="timeofday" />
+						<input type="radio" value="Afternoon" id="afternoon" name="timeofday" data-theme="d" />
 						<label for="afternoon">Afternoon</label>
-						<input type="radio" value="Evening" id="evening" name="timeofday" />
+						<input type="radio" value="Evening" id="evening" name="timeofday" data-theme="d" />
 						<label for="evening">Evening</label>
 					</fieldset>
 				</div>
 
 				<!-- Completion Date -->
-				<label for="completiondate">Date to be completed *</label><br /><input type="date" placeholder="YYYY-MM-DD" id="completiondate" name="completiondate" data-role="datebox" data-options='{"mode": "calbox", "calTodayButton": true}' data-transition="slideup" class="required" />
+				<label for="completiondate">Date to be completed *</label><br /><input type="date" placeholder="YYYY-MM-DD" id="completiondate" name="completiondate" data-role="datebox" data-options='{"mode": "calbox", "calTodayButton": true}' data-transition="slideup" data-theme="b" class="required" />
 
 				<!-- Motivation / Comments -->
 				<div data-role="fieldcontain">
-					<label for="comments">Start getting yourself motivated.</label><br /><textarea id="comments" name="comments" class="required" placeholder="Motivation starts here."></textarea>
+					<label for="comments">Start getting yourself motivated.</label><br /><textarea id="comments" name="comments" data-theme="b" class="required" placeholder="Motivation starts here."></textarea>
 				</div>
 
 
 				<!-- Submit(Save) and Reset -->
 				<div class="ui-grid-a">
 					<div class="ui-block-a">
-						<input type="submit" name="save" id="saveData" value="Save!" data-icon="check" data-iconpos="left" data-theme="b" data-rel="dialog" />
+						<input href="" type="submit" name="save" id="saveData" value="Save!" data-icon="check" data-iconpos="left" data-theme="b" />
 					</div>
 					<div class="ui-block-b">
-						<input type="reset" name="reset" id="reset" value="Reset" />
+						<input type="reset" name="reset" id="reset" value="Reset" data-theme="d" />
 					</div>
 				</div>
 
@@ -342,36 +339,36 @@
 				<img src="images/BHF_About.png" class="imgSize" />
 			</div>
 
-			<div data-role="collapsible" data-collapsed="true">
-					<h3>Information</h3>
-					<ul data-role="listview">
-					
-						<li>
-							<a href="#aboutApp">
-								<img src="images/About_Icon.png" class="imgSize" />
-								<h4>About the App</h4>
-								<p>This will tell you about the app</p>
-							</a>
-						</li>
-					
-						<li>
-							<a href="#underConstruction">
-								<img src="images/.png" class="imgSize"/>
-								<h4>About the Coder</h4>
-								<p>This will tell you about the coder</p>
-							</a>
-						</li>
+			<div data-role="collapsible" data-collapsed="true" data-theme="b">
+				<h3>Information</h3>
+				<ul data-role="listview">
+				
+					<li>
+						<a href="#aboutApp">
+							<img src="images/About_Icon.png" class="imgSize" />
+							<h4>About the App</h4>
+							<p>This will tell you about the app</p>
+						</a>
+					</li>
+				
+					<li>
+						<a href="#underConstruction">
+							<img src="images/Coder.png" class="imgSize"/>
+							<h4>About the Coder</h4>
+							<p>This will tell you about the coder</p>
+						</a>
+					</li>
 
-						<li>
-							<a href="#jqmdb">
-								<img src="images/.png" class="imgSize"/>
-								<h4>About DateBox</h4>
-								<p>Attribution for DateBox</p>
-							</a>
-						</li>
-					
-					</ul>
-				</div>
+					<li>
+						<a href="#jqmdb">
+							<img src="images/JTS_Dev.png" class="imgSize"/>
+							<h4>About DateBox</h4>
+							<p>Attribution for DateBox</p>
+						</a>
+					</li>
+				
+				</ul>
+			</div>
 
 		</div>
 
@@ -485,7 +482,7 @@
 			</div>
 
 			<div>
-				<ul data-role="listview" data-inset="true">
+				<ul data-role="listview" data-inset="true" data-theme="b">
 					<li><a href="http://dev.jtsage.com/jQM-DateBox/">JT Sage - jQM DateBox</a></li>
 					<li><a href="https://github.com/jtsage/jquery-mobile-datebox/blob/master/README.md">jQM DateBox Features</a></li>
 					<li><a href="https://github.com/jtsage/jquery-mobile-datebox/blob/master/LICENSE">jQM DateBox License</a></li>
@@ -570,7 +567,7 @@
 		<!--  News Page Content -->
 		<div data-role="content">
 
-			<ul data-role="listview" data-filter="true">
+			<ul data-role="listview" data-filter="true" data-filter-theme="d">
 
 				<li>
 					<a href="#underConstruction">
