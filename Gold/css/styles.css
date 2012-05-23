@@ -48,6 +48,7 @@ https://github.com/AlucardFair/MiU-Project-4
 .showRequired {
 	font-weight: bold;
 	color: red;
+	text-shadow: 0 2px 0 rgba(0,0,0,.6);
 }
 
 #home .ui-grid-a, .ui-grid-b {
