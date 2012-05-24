@@ -7,6 +7,14 @@ Body Health & Fitness
 https://github.com/AlucardFair/MiU-Project-4
 */
 
+.ui-body-c {
+	color: white;
+}
+
+.ui-page {
+	background: transparent;
+}
+
 .mainColor {
 	background-image: -webkit-linear-gradient(bottom, rgb(0,128,136), rgb(0,148,156), rgb(0,168,176));
 }
